@@ -1,11 +1,8 @@
 // All code below based on Class Activity-CatsApp
 const express = require("express");
-
 const burgers = require("../models/burgers.js");
-
 const router = express.Router();
-const orm = require("../config/orm.js");
-const connection = require("../config/connection.js");
+
 
 // Create all our routes and set up logic within those routes where required.
 router.get("/", function(req, res) {
@@ -19,26 +16,23 @@ router.get("/", function(req, res) {
 });
 
 
-router.post("/burgers", function(req, res) {
+router.post("/api/burgers", function(req, res) {
   burgers.insertOne([
-    "burger_name"
+    "burger_name", "devoured"
   ], [
-    req.body.burger_name
+    req.body.burger_name, req.body.devoured
   ], function(result) {
-    console.log(req.body);
     res.json({id: result.insertID});
   });
 });
 
-router.put("/burgers/:id", function(req, res) {
+router.put("/api/burgers/:id", function(req, res) {
   var condition = "id = " + req.params.id;
 
-  console.log("condition", condition);
-
-  burger.updateOne({
+  burgers.updateOne({
     devoured: true
-  }, condition, function(data) {
-    res.redirect("/");
+  }, condition, function(result) {
+    res.status(200).end();
   });
 });
 
