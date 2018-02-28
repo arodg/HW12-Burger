@@ -1,21 +1,21 @@
 {
-  "name": "burger",
+  "name": "HW12-Burger",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/arodg/burger.git"
+    "url": "git+https://github.com/arodg/HW12-Burger.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/arodg/burger/issues"
+    "url": "https://github.com/arodg/HW12-Burger/issues"
   },
-  "homepage": "https://github.com/arodg/burger#readme",
+  "homepage": "https://github.com/arodg/HW12-Burger#readme",
   "dependencies": {
     "body-parser": "^1.18.2",
     "express": "^4.16.2",
