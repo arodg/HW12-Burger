@@ -12,6 +12,7 @@ var connection = mysql.createConnection({
   database: "burgers_db",
   port: 3306
 });
+}
 
 //connection.connect();
 
