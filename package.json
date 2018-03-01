@@ -1,10 +1,11 @@
 {
-  "name": "HW12-Burger",
+  "name": "hw12-burger",
   "version": "1.0.0",
-  "description": "",
+  "description": "### Overview This app is a burger logger created with MySQL, Node, Express, Handlebars and an ORM. It follows the MVC design pattern. The app uses Node and MySQL to query and route data, and Handlebars to generate HTML.",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",
